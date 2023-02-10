@@ -8,8 +8,9 @@ function App() {
   return (
     <CssBaseline>
       <div className="App">
+      <SidebarRight/>
         <Sidebar />
-        <SidebarRight/>
+   
       </div>
     </CssBaseline>
   );

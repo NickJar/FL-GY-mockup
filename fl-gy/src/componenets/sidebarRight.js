@@ -1,45 +1,57 @@
-import { CssBaseline, Drawer } from "@mui/material";
+import { Button, CssBaseline, Drawer, List, listClasses } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import { useState } from "react";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 export default function SidebarRight() {
-  const drawerWidth = 240;
+  const drawerWidth = 300;
+
+  const [state, setState] = useState(false);
+
+  const toggleDrawer = (open) => (event) => {
+    setState(open);
+  };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box
+      sx={{
+        height: "100%",
+        width: "auto",
+        display: "flex",
+        justifyContent: "right",
+        alignItems: "center",
+      }}
+    >
       <CssBaseline>
-        <Box>
-          <Drawer
-            sx={{
-              width: drawerWidth,
-              flexShrink: 0,
-              "& .MuiDrawer-paper": {
-                width: drawerWidth,
-                boxSizing: "border-box",
-                backgroundColor: "#e4eaef",
-              },
-            }}
-            variant="permanent"
-            anchor="right"
-          >
-            <Box
-              sx={{
-                height: "100%",
-                color: "#1854ba",
-                fontSize: "large",
-                width: "245rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-start",
-              }}
-            >
-              <Box sx={{ position: "absolute" }}>
-                <ArrowCircleLeftIcon style={{ fontSize: "4rem" }} />
-              </Box>
-            </Box>
-          </Drawer>
+        <Box
+          component={"div"}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            height: "100%",
+            backgroundColor: "#e4eaef",
+          }}
+        >
+          <ArrowBackIosNewIcon
+            sx={{ fontSize: "2.5rem", color: "#1854ba" }}
+            onClick={toggleDrawer(true)}
+          />
         </Box>
+        <Drawer
+          sx={{
+            width: drawerWidth,
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              boxSizing: "border-box",
+              backgroundColor: "#e4eaef",
+            },
+          }}
+          anchor="right"
+          open={state}
+          onClose={toggleDrawer(false)}
+        ></Drawer>
       </CssBaseline>
     </Box>
   );
