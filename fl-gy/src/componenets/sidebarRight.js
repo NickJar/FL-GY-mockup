@@ -16,11 +16,10 @@ export default function SidebarRight() {
   return (
     <Box
       sx={{
-        height: "100%",
-        width: "auto",
         display: "flex",
         justifyContent: "right",
         alignItems: "center",
+
       }}
     >
       <CssBaseline>
@@ -30,7 +29,7 @@ export default function SidebarRight() {
             display: "flex",
             alignItems: "center",
             height: "100%",
-            backgroundColor: "#e4eaef",
+            position: 'fixed', 
           }}
         >
           <ArrowBackIosNewIcon

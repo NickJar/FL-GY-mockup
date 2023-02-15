@@ -32,6 +32,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import SettingsIcon from "@mui/icons-material/Settings";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
+import Main from "./main";
 
 export default function Sidebar() {
   const drawerWidth = 240;
@@ -191,6 +192,7 @@ export default function Sidebar() {
        
         </Box>
       </CssBaseline>
+      <Main/>
     </Box>
   );
 }

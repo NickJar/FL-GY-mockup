@@ -1,3 +1,4 @@
+import { FullscreenExit } from "@mui/icons-material";
 import { CssBaseline } from "@mui/material";
 import React from "react";
 
@@ -6,9 +7,8 @@ import SidebarRight from "./componenets/sidebarRight";
 
 function App() {
   return (
-    <CssBaseline>
+    <CssBaseline sx={{display: 'flex'}}>
       <div className="App">
-      <SidebarRight/>
         <Sidebar />
    
       </div>
