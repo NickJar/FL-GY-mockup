@@ -10,7 +10,7 @@ function App() {
     <CssBaseline sx={{display: 'flex'}}>
       <div className="App">
         <Sidebar />
-   
+
       </div>
     </CssBaseline>
   );

@@ -192,7 +192,9 @@ export default function Sidebar() {
        
         </Box>
       </CssBaseline>
+      <Box sx={{display: 'flex', width: '100%', height: '100%'}}>
       <Main/>
+      </Box>
     </Box>
   );
 }
