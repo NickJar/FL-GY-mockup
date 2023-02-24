@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "cd5c3c13c4f43aaca772",
-    "url": "/FL-GY-mockup/static/js/main.cd5c3c13.chunk.js"
+    "revision": "fd72dc81dab55291c0b3",
+    "url": "/FL-GY-mockup/static/js/main.fd72dc81.chunk.js"
   },
   {
     "revision": "075d70c5f22260be0f8b",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/FL-GY-mockup/static/media/gy-logo.de305c86.png"
   },
   {
-    "revision": "a5cddfeeb62d1eb0c685afad837441c1",
+    "revision": "396caac7ece82dd4229e6f9507d2a08c",
     "url": "/FL-GY-mockup/index.html"
   }
 ];
